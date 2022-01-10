@@ -7,9 +7,9 @@ name: mysqldb
 
 spec:
   # Name assigned to the MySQL DB System in OCI. This is the name that appears in OCI console.
-  displayName: mysqldb
+  displayName: 
   # Description for the MySQL DB System. This is required.
-  description: "MDS instance for Wordpress"
+  description: 
   # OCID of the compartment to deploy the MySQL DB System resource. This must ne a compartment that you have permissions to.
   compartmentId:  
   # OCID of the subnet to deploy the MySQL DB System resource. The subnet must alreday be created and you have permission on to this subnet. 
@@ -38,7 +38,7 @@ spec:
   hostnameLabel:
   # Not Required: The specific MySQL version identifier.
   mysqlVersion:
-  # Not Required: IP address assigned to the MySQL DB System resource. The IP address must be availablein subnet. Set autoAssignIP to true to auto-assign an IP.
+  # Not Required: IP address assigned to the MySQL DB System resource. OCI will auto assign the IP if this is not set
   IPAddr: 
 
 # Set autoDB to true to automatically create a database on MySQL DB system when ready 
@@ -50,7 +50,7 @@ createDBJobImage: chiphwang/createdb:1.6
 # name of secret to hold username and password of MySQL DB System 
 secretName: mysqlsecret
 
-# Username and paasword for the MySQL DB System. 
+# Username and paasword for the MySQL DB System if autoDB.enabled is set to true. 
 database:
   userName: 
 # Password must satisfy OCI MySQL DB System requrements otherwise MySQL DB System creation will fail
