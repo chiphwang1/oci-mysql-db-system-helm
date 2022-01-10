@@ -50,7 +50,7 @@ This Helm chart relies on the OCI Service Operator for Kubernetes (OSOK) and it 
 
      helm  -n <namespace name> ls
 
-**7. Uninstall the Helm chart**
+**7. To uninstall the Helm chart**
 
      helm uninstall -n <namespace name> <name of the install> .
      
