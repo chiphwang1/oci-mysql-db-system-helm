@@ -52,7 +52,7 @@ secretName: mysqlsecret
 
 # Username and paasword for the MySQL DB System if autoDB.enabled is set to true. 
 database:
-  userName: 
+  username: 
 # Password must satisfy OCI MySQL DB System requrements otherwise MySQL DB System creation will fail
 # Best practice is not to put password here but set it when installing the helm chart
   password: 
