@@ -3,18 +3,18 @@
 # Declare variables to be passed into your templates.
 
 # name of MySQL DB System resource. This is name that is used in the Kubernetes cluster.
-name: mysqldb6
+name: mysqldb
 
 spec:
   # Name assigned to the MySQL DB System in OCI. This is the name that appears in OCI console.
-  displayName: newdb7
+  displayName: mysqldb
   # Description for the MySQL DB System. This is required.
-  description: newdb7
+  description: "MDS instance for Wordpress"
   # OCID of the compartment to deploy the MySQL DB System resource. This must ne a compartment that you have permissions to.
-  compartmentId: ocid1.compartment.oc1..aaaaaaaamtrs5i5sm6b4ie2uchhjlu6jxp3oehi5y4b6hp34pqpcffpkdzja  
+  compartmentId:  
   # OCID of the subnet to deploy the MySQL DB System resource. The subnet must alreday be created and you have permission on to this subnet. 
   # Ideally you want the MySQL DB System in the same subnet as your OKE cluster
-  subnetId: ocid1.subnet.oc1.iad.aaaaaaaar4t5u3skkkao364v57kruut5uf5rflvtvhymh4g572rqjsha57xq
+  subnetId: 
   # Size of the datasore in GBs
   dataStorageSizeInGBs: 100
   # Redudancy for the MySQL DB System
@@ -31,7 +31,7 @@ spec:
     id: ocid1.mysqlconfiguration.oc1..aaaaaaaalwzc2a22xqm56fwjwfymixnulmbq3v77p5v4lcbb6qhkftxf2trq
   # Avaiability Domain to deploy the MySQL DB System
   # oci iam availability-domain list
-  availabilityDomain: GrCh:US-ASHBURN-AD-1
+  availabilityDomain: 
   # Not Required: The fault domain on which to deploy the Read/Write endpoint and is for the primary intanace. Not Required
   faultDomain: 
   # Not Required: The hostname for the primary endpoint of the DB System. Used for DNS.
@@ -52,7 +52,7 @@ secretName: mysqlsecret
 
 # Username and paasword for the MySQL DB System. 
 database:
-  userName: admin
+  userName: 
 # Password must satisfy OCI MySQL DB System requrements otherwise MySQL DB System creation will fail
 # Best practice is not to put password here but set it when installing the helm chart
-  password: Chh%%67896789psh
+  password: 
