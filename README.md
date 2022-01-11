@@ -90,7 +90,7 @@ This Helm chart relies on the OCI Service Operator for Kubernetes (OSOK) and it 
 
 **1. To check the status of the MySQL DB System run the following command**
      
-     kubectl -n <namespace of mysqldbsystem> -o wide
+     kubectl -n <namespace of mysqldbsystem> get mysqldbsystems -o wide
 
 **2. To describe the MySQL DB System run the following command** 
      
