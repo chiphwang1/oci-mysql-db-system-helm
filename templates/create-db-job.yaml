@@ -22,7 +22,7 @@ spec:
               name: {{ .Values.secretName }}
               key: password
         - name: database
-          value: {{ .Values.dbName }}
+          value: {{ .Values.DBName }}
         - name: dbhost_secret
           value: {{ .Values.name }}
         image: {{ .Values.createDBJobImage }}
