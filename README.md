@@ -26,7 +26,7 @@ This Helm chart relies on the OCI Service Operator for Kubernetes (OSOK) and it 
 
       cd ./oci-mysql-db-system-helm
 
-**3.Populate the values.yaml file with information to deploy the MDS resource**
+**3. Populate the values.yaml file with information to deploy the MDS resource**
 
 
 **4. Create the namespace where the MDS resource will be deployed**
