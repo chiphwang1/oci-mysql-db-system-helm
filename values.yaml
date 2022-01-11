@@ -44,7 +44,7 @@ spec:
 # Set autoDB to true to automatically create a database on MySQL DB system when ready 
 autoDB:
   enabled: true
-dbName: wordpress
+DBName: wordpress
 createDBJobImage: chiphwang/createdb:1.6
 
 # name of secret to hold username and password of MySQL DB System 
