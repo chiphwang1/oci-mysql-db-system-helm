@@ -94,7 +94,7 @@ This Helm chart relies on the OCI Service Operator for Kubernetes (OSOK) and it 
 
 **2. To describe the MySQL DB System run the following command** 
      
-     kubectl describe mysqldbsystems <namespace of mysqldbsystem>
+     kubectl -n <namespace of mysqldbsystem> describe mysqldbsystems <name of mysqldbsystem>
 
 **3. To retreive the OCID of MySQL DB System run the following command** 
 
