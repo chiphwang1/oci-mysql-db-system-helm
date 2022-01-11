@@ -80,7 +80,7 @@ This Helm chart relies on the OCI Service Operator for Kubernetes (OSOK) and it 
 | `spec.ipAddress` | The IP address the DB System is configured to listen on. A private IP address of your choice to assign to the primary endpoint of the DB System. Must be an available IP address within the subnet's CIDR. If you don't specify a value, Oracle automatically assigns a private IP address from the subnet. This should be a "dotted-quad" style IPv4 address. | string | no |
 | `database.username` | The admin username for the administrative user for the MuSQL DB Systesm. This should be assigned during the deployment of the Helm chart and not kept in the values.yaml file| string | yes       |
 | `database.password` | The admin password for Mysql DB System. The password must be between 8 and 32 characters long, and must contain at least 1 numeric character, 1 lowercase character, 1 uppercase character, and 1 special (nonalphanumeric) character. | string | yes       |
-| `autoDB.enabled` | set to true to automatically create a database in the Mysql DB System. Leave this field empty otherwise. | string | yes       |
+| `autoDB.enabled` | set to true to automatically create a database in the Mysql DB System. Leave this field empty otherwise. | string | no       |
 | `DBName` | if autoDB.enabled is set to true, name the database in this field. | string | no       |
 
 
