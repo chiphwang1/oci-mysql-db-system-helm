@@ -81,7 +81,7 @@ This Helm chart relies on the OCI Service Operator for Kubernetes (OSOK) and it 
 | `database.username` | The admin username for the administrative user for the MuSQL DB Systesm. This should be assigned during the deployment of the Helm chart and not kept in the values.yaml file| string | yes       |
 | `database.password` | The admin password for Mysql DB System. The password must be between 8 and 32 characters long, and must contain at least 1 numeric character, 1 lowercase character, 1 uppercase character, and 1 special (nonalphanumeric) character. | string | yes       |
 | `autoDB.enabled` | set to true to automatically create database in the Mysql DB System. Leave field empty otherwise. | string | yes       |
-| `DBName` | if autoDB.enatbled is set to true this will be name of the database | string | no       |
+| `DBName` | if autoDB.enabled is set to true, add the name of the database in this field. | string | no       |
 
 
 
