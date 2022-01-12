@@ -41,7 +41,7 @@ spec:
   # Not Required: IP address assigned to the MySQL DB System resource. OCI will auto assign the IP if this is not set
   IPAddr: 
 
-# Set autoDB to true, to automatically create a database on MySQL DB system when ready. Leave the field empty to create a database on MySQL DB system.
+# Set autoDB to true, to automatically create a database on MySQL DB system when ready. Leave the field empty to disable autoDB.
 autoDB:
   enabled: true
 DBName: wordpress
